@@ -1,0 +1,83 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Form Styles */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+/* Results Section */
+.hidden {
+    display: none;
+}
+
+#result {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+output {
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+#resetBtn {
+    background-color: #757575;
+    margin-top: 1rem;
+}
+
+#resetBtn:hover {
+    background-color: #616161;
+}
