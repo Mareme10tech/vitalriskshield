@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertension Risk Assessment</title>
+    <link rel="stylesheet" href="\Models\hypertension.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Hypertension Risk Assessment</h1>
+            <p>Fill out this form to assess your risk of hypertension</p>
+        </header>
+
+        <form id="hypertensionForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>
+                    Age:
+                    <input type="number" name="age" required min="0" max="120">
+                </label>
+                
+                <label>
+                    Salt Intake (grams/day):
+                    <input type="number" name="salt_intake" step="0.1" required min="0" max="50">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Health Metrics</legend>
+                <label>
+                    Stress Level (0-10):
+                    <input type="number" name="stress_score" required min="0" max="10">
+                </label>
+                
+                <label>
+                    Sleep Duration (hours):
+                    <input type="number" name="sleep_duration" step="0.1" required min="0" max="24">
+                </label>
+                
+                <label>
+                    BMI (kg/m²):
+                    <input type="number" name="bmi" step="0.1" required min="10" max="60">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Health History</legend>
+                <label>
+                    Family History of Hypertension:
+                    <select name="family_history" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </label>
+                
+                <label>
+                    Smoking Status:
+                    <select name="smoking_status" required>
+                        <option value="Smoker">Smoker</option>
+                        <option value="Non-Smoker">Non-Smoker</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <button type="submit">Assess Risk</button>
+        </form>
+
+        <section id="result" class="hidden">
+            <h2>Risk Assessment Result</h2>
+            <output id="resultMessage"></output>
+            <output id="probability"></output>
+            <button id="resetBtn">Start New Assessment</button>
+        </section>
+    </main>
+
+    <script src="\Models\hypertension.js"></script>
+</body>
+</html>
